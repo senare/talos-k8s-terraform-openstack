@@ -1,0 +1,16 @@
+# These variables apply to this entire environment.
+# They are automatically pulled in using yamldecode and merged into the inputs of the root terragrunt.hcl file.
+
+{
+  use_fip: true,
+  cluster_name: "elastxtalospoc",
+  image_uuid: "d44757d4-c381-45e1-ba4b-7bf135d9aca8",
+  control_plane_flavor: "2C-2GB-20GB",
+  worker_flavor: "2C-2GB-50GB",
+  control_plane_number: 3,
+  worker_number: 3,
+  environment: "elastxtalospoc",
+  external_network_name: "elx-public1",
+  external_network_id: "600b8501-78cb-4155-9c9f-23dfcba88828",
+  domain: "example.com",
+}
